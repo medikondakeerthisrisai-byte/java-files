@@ -1,0 +1,21 @@
+public class SmartLocker1 {
+    String id;
+    String user;
+
+    SmartLocker(String id, String user) {
+        this.id = id;
+        this.user = user;
+    }
+
+    void display() {
+        System.out.println("Locker: " + id + " | User: " + user);
+    }
+
+    public static void main(String[] args) {
+        SmartLocker l1 = new SmartLocker("L101", "Rahul");
+        SmartLocker l2 = new SmartLocker("L102", "Anjali");
+
+        l1.display();
+        l2.display();
+    }
+}
